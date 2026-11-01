@@ -25,12 +25,79 @@
 </head>
 
 <body>
+   <div id="tsparticles"></div>
+
+<div id="certificate-particles"></div>
+
+<script>
+function setupParticlesBackground() {
+    tsParticles.load("tsparticles", {
+        particles: {
+            links: {
+                enable: true,
+                distance: 100,
+                opacity: 0.5
+            },
+            number: {
+                density: { enable: true, value_area: 800 },
+                value: 55
+            },
+            size: { value: 3 },
+            move: {
+                direction: "none",
+                enable: true,
+                outMode: "bounce",
+                random: false,
+                speed: 2,
+                straight: false
+            },
+            opacity: { value: 0.5 }
+        },
+        retina_detect: true
+    });
+}
+
+function setupCertificateParticles() {
+    tsParticles.load("certificate-particles", {
+        particles: {
+            links: {
+                enable: true,
+                distance: 100,
+                opacity: 0.5
+            },
+            number: {
+                density: { enable: true, value_area: 800 },
+                value: 35
+            },
+            size: { value: 3 },
+            move: {
+                direction: "none",
+                enable: true,
+                outMode: "bounce",
+                random: false,
+                speed: 2,
+                straight: false
+            },
+            opacity: { value: 0.5 }
+        },
+        retina_detect: true
+    });
+}
+</script>
+
+<script
+    src="https://cdn.jsdelivr.net/npm/tsparticles-preset-links@2.12.0/tsparticles.preset.links.bundle.min.js"
+    onload="setupParticlesBackground(); setupCertificateParticles();"
+    async
+    defer>
+</script>
+
 
     <!-- NAVIGATION BAR -->
     <header>
         <nav class="navbar">
 
-            <a href="#home" class="logo">KB.</a>
+            
 
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
@@ -46,11 +113,7 @@
 
 
     <!-- HERO SECTION -->
-    <section class="hero" id="home">
-          <!-- BACKGROUND VIDEO -->
-        <video class="home-bg-video" autoplay muted loop playsinline>
-          <source src="assets/background vdo.mp4" type="video/mp4">
-        </video>
+    <section class="hero" id="home">  
 
         <div class="hero-content">
 
@@ -358,6 +421,7 @@
 
 <!-- 3D CERTIFICATE SECTION -->
 <section class="section certificates" id="certificates">
+    <div id="certificate-particles"></div>
 
     <div class="section-heading">
         <p class="section-subtitle">MY MILESTONES</p>

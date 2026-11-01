@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kashish Bharti | CV</title>
+    <link rel="stylesheet" href="cv.css">
+</head>
+
+<body>
+
+    <header class="cv-navbar">
+    
+
+        <div class="cv-actions">
+            <button id="themeToggle">☀ Light Mode</button>
+            <button onclick="window.print()">🖨 Print</button>
+            <a href="assets/my-cv.pdf" download class="download-btn">
+                Download CV
+            </a>
+        </div>
+    </header>
+
+    <main class="cv-container">
+        <h1>My Curriculum Vitae</h1>
+        <p>My academic journey, skills and experience.</p>
+
+        <div class="pdf-wrapper">
+            <iframe
+                src="assets/my-cv.pdf"
+                title="Kashish Bharti CV">
+            </iframe>
+        </div>
+    </main>
+
+    <script src="cv.js"></script>
+</body>
+</html>
